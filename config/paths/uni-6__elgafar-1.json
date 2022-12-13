@@ -1,0 +1,16 @@
+{
+  "src": {
+    "chain-id": "uni-6",
+    "client-id": "07-tendermint-527",
+    "connection-id": "connection-658"
+  },
+  "dst": {
+    "chain-id": "elgafar-1",
+    "client-id": "07-tendermint-532",
+    "connection-id": "connection-541"
+  },
+  "src-channel-filter": {
+    "rule": "",
+    "channel-list": []
+  }
+}

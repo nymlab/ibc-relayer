@@ -1,0 +1,21 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: relayer_osmosis_testnet
+    metrics_path: /relayer/metrics
+    static_configs:
+      - targets: ['relayer_uni6__osmo-test-5:5183']
+  - job_name: relayer_cosmoshub_testnet
+    metrics_path: /relayer/metrics
+    static_configs:
+      - targets: ['relayer_uni6__theta-testnet-001:5183']
+  - job_name: relayer_neutron_testnet
+    metrics_path: /relayer/metrics
+    static_configs:
+      - targets: ['relayer_uni6__pion-1:5183']
+  - job_name: relayer_stargaze_testnet
+    metrics_path: /relayer/metrics
+    static_configs:
+      - targets: ['relayer_uni6__elgafar-1:5183']

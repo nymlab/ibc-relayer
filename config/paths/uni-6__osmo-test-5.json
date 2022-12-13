@@ -1,0 +1,16 @@
+{
+  "src": {
+    "chain-id": "uni-6",
+    "client-id": "07-tendermint-539",
+    "connection-id": "connection-671"
+  },
+  "dst": {
+    "chain-id": "osmo-test-5",
+    "client-id": "07-tendermint-832",
+    "connection-id": "connection-739"
+  },
+  "src-channel-filter": {
+    "rule": "",
+    "channel-list": []
+  }
+}
