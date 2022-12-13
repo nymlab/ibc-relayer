@@ -1,0 +1,91 @@
+version: 1
+
+chains:
+  local_wasm:
+    chain_id: wasm-local
+    prefix: wasm
+    gas_price: 0.025ucosm
+    hd_path: m/44'/118'/0'/0/0
+    estimated_block_time: 400
+    estimated_indexer_time: 60
+    rpc:
+      - http://host.docker.internal:26647
+  local_juno:
+    chain_id: juno-local
+    prefix: juno
+    gas_price: 0.025ujunox
+    hd_path: m/44'/118'/0'/0/0
+    estimated_block_time: 7000
+    estimated_indexer_time: 250
+    rpc:
+      - http://host.docker.internal:26657
+
+  local_gaia:
+    chain_id: gaia-testing
+    prefix: cosmos
+    gas_price: 0.025uatom
+    hd_path: m/44'/118'/0'/0/0
+    estimated_block_time: 400
+    estimated_indexer_time: 60
+    rpc:
+      - http://host.docker.internal:26655
+  local_osmo:
+    chain_id: osmo-testing
+    prefix: osmo
+    gas_price: 0uosmo
+    hd_path: m/44'/118'/0'/0/0
+    estimated_block_time: 400
+    estimated_indexer_time: 60
+    rpc:
+      - http://host.docker.internal:26653
+  cosmoshub-4:
+    chain_id: cosmoshub-4
+    prefix: cosmos
+    gas_price: 0.026uatom
+    hd_path: m/44'/118'/0'/0/0
+    ics20_port: 'transfer'
+    estimated_block_time: 7000
+    estimated_indexer_time: 150
+    rpc:
+      - https://rpc.cosmos.network:443
+  juno:
+    chain_id: juno-1
+    prefix: juno
+    gas_price: 0.005ujuno
+    hd_path: m/44'/118'/0'/0/0
+    ics20_port: 'transfer'
+    estimated_block_time: 7000
+    estimated_indexer_time: 250
+    rpc:
+      - https://rpc-juno.itastakers.com:443
+  uni:
+    chain_id: uni-3
+    prefix: juno
+    gas_price: 0.025ujunox
+    hd_path: m/44'/118'/0'/0/0
+    ics20_port: 'transfer'
+    estimated_block_time: 7000
+    estimated_indexer_time: 250
+    rpc:
+      - https://rpc.uni.juno.deuslabs.fi:443
+  osmosis:
+    chain_id: osmosis-1
+    prefix: osmo
+    gas_price: 0uosmo
+    hd_path: m/44'/118'/0'/0/0
+    ics20_port: 'transfer'
+    estimated_block_time: 7000
+    estimated_indexer_time: 250
+    rpc:
+      - https://rpc-osmosis.blockapsis.com:443
+  malaga:
+    chain_id: malaga-420
+    prefix: wasm
+    gas_price: 0.25umlg
+    hd_path: m/44'/118'/0'/0/0
+    faucet: https://faucet.malaga-420.cosmwasm.com:443
+    ics20_port: 'transfer'
+    estimated_block_time: 6000
+    estimated_indexer_time: 100
+    rpc:
+      - https://rpc.malaga-420.cosmwasm.com:443
